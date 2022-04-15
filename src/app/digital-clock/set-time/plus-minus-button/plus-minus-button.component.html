@@ -1,0 +1,11 @@
+<div class="flex-col sm:-mt-4">
+     <div class="flex justify-around text-3xl sm:text-2xl">        
+         <button class="bg-white text-black text-center focus:outline-none hover:bg-gray-800 hover:text-white rounded-full h-16 w-16 px-4 py-2 m-2" (click)="hourIncrement()"><span> + </span></button>
+         <button class="bg-white text-black text-center focus:outline-none hover:bg-gray-800 hover:text-white rounded-full h-16 w-16 px-4 py-2 m-2" (click)="hourDecrement()" ><span > - </span></button>
+         <button class="bg-white text-black text-center focus:outline-none hover:bg-gray-800 hover:text-white rounded-full h-16 w-16 px-4 py-2 m-2" (click)="minuteIncrement()"><span > + </span></button>
+         <button class="bg-white text-black text-center focus:outline-none hover:bg-gray-800 hover:text-white rounded-full h-16 w-16 px-4 py-2 m-2" (click)="minuteDecrement()"><span > - </span></button>
+     </div>
+     <div>
+         <app-button-control [alarmHours]="alarmHours" [alarmMinutes]="alarmMinutes"></app-button-control>
+    </div>
+</div>
